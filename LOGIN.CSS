@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    background-color: azure;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+h4, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-top: 10px;
+    background: linear-gradient(to right, blue, white, blue);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container styles */
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+/* Form container styles */
+.container2 {
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid rgb(46, 48, 33);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 24px;
+    color: darkslategray;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    background: linear-gradient(to right, rgba(255,0,0,1), rgba(255,0,0,0));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: cornsilk;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(197, 193, 177);
+}
+
+/* Image container styles */
+.container3 {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    background-image: url(https://i.pinimg.com/236x/d8/16/06/d816065f2da59a8b5447b8fd470d114f.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container2 {
+        max-width: 100%;
+    }
+
+    .container3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    input, button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
